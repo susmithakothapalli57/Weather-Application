@@ -1,0 +1,92 @@
+.container {
+    max-width: 450px; /* Container width */
+    margin: 5% auto; /* Center the container */
+    padding: 30px; /* Inner padding */
+    background: rgba(255, 255, 255, 0.15); /* More pronounced transparency */
+    border-radius: 30px; /* Increased roundness */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6); /* Deeper shadow for depth */
+    backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+}
+
+h1 {
+    font-style: italic;
+    font-size: 2.5rem; /* Size of the main heading */
+    margin-bottom: 20px; /* Spacing below the heading */
+    letter-spacing: 0px; /* Space between letters */
+    background: linear-gradient(45deg, #ff6a6a, #ffcc6a); /* Gradient text effect */
+    background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Fill color */
+}
+
+input {
+    width: calc(100% - 24px); /* Full width minus padding/border to fit within container */
+    padding: 15px; /* Inner padding */
+    font-size: 1.2rem; /* Font size */
+    border: 2px solid #ffcc6a; /* Soft yellow border */
+    border-radius: 10px; /* Soft corners */
+    margin-bottom: 15px; /* Spacing below input */
+    background: rgba(255, 255, 255, 0.2); /* Light background with transparency */
+    color: #ffffff; /* White text */
+    transition: all 0.3s ease; /* Smooth transition */
+    outline: none; /* Remove default outline */
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.3); /* Light background on focus */
+    color: #333333; /* Darker text on focus */
+    box-shadow: 0 0 10px #ffcc6a; /* Soft glow effect on focus */
+    border-color: #ff6a6a; /* Change border color on focus */
+}
+
+button {
+    padding: 15px 25px; /* Inner padding */
+    background: #ff6a6a; /* Button color */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    font-size: 1.2rem; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 10px; /* Soft corners */
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Transition effects */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+button:hover {
+    background: #ff4747; /* Darker shade on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+.weather-info {
+    margin-top: 20px; /* Spacing above weather info */
+    padding: 20px; /* Inner padding */
+    background: rgba(255, 255, 255, 0.2); /* Lightly tinted background */
+    border-radius: 15px; /* Soft corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.weather-info h2 {
+    font-size: 2rem; /* Size of the location heading */
+    margin: 0; /* No margin */
+    color: #ffcc6a; /* New color for the location */
+}
+
+.weather-info img.weather-icon {
+    width: 120px; /* Size of the weather icon */
+    height: 120px; /* Size of the weather icon */
+    margin: 10px 0; /* Spacing around the icon */
+}
+
+.weather-info p {
+    font-size: 1.4rem; /* Font size for description */
+    margin: 5px 0; /* Spacing above and below */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem; /* Smaller heading size on mobile */
+    }
+    input, button {
+        font-size: 1rem; /* Smaller button and input size on mobile */
+    }
+}
